@@ -55,5 +55,3 @@ function footer() {
         });
     });
 };
-
-footer();
