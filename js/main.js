@@ -25,6 +25,10 @@ if (!(faviconLink == null)) {
     link.href = faviconLink;
 }
 
+//When the game server is down, enable this.
+
+//window.location.href = "/minecraftgoldfish3/index.html";
+
 function newad() {
     var script = document.createElement("script");
     script.async = true;
