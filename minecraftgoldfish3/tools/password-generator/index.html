@@ -8,7 +8,7 @@
         <h1>Random Password Generator</h1>
         <p>Generates a random and strong password.</p>
         <label for="len">Length:</label>
-        <input type="number" id="len" value="10" />
+        <input type="number" id="len" min="1" value="10" />
         <div style="display: none;">
             <p>Options:</p>
             <label for="low">Include Lowercase Letters:</label>
@@ -107,6 +107,9 @@
             special[15] = '>';
             function generate() {
                 var len = document.getElementById('len').value;
+                if (len <= 0) {
+                    len = 1;
+                }
                 var low = document.getElementById('low').checked;
                 var up = document.getElementById('up').checked;
                 var num = document.getElementById('num').checked;
